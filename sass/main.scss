@@ -1104,7 +1104,8 @@ footer {
     p {
       font-size: 20px;
       font-weight: 500;
-      max-width: 600px;
+      max-width: 700px;
+      text-align: unset;
     }
     .limited-h1 {
       max-width: 200px;
@@ -1120,12 +1121,16 @@ footer {
     }
     .card {
       padding: 0 2em;
+      display: grid !important;
+      grid-template-rows: 1fr 0.5fr 1fr 0.25fr;
+      .read-more {
+        justify-content: unset !important;
+      }
     }
     h2 {
       color: #333333;
       font-size: 24px;
       font-weight: 500;
-      margin-top: 1.5em;
       line-height: 1.5em;
     }
     p {
@@ -1309,6 +1314,14 @@ footer {
     button {
       font-size: 18px;
       padding: 15px 40px;
+    }
+  }
+}
+@media only screen and (max-width: 1590px) {
+  .home-hero {
+    .content {
+      max-width: 600px !important;
+      margin-left: 5vw !important;
     }
   }
 }
